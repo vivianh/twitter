@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Rest Client Template</string>
-    <string name="login_label">Log in</string>
+    <string name="app_name">Twitter</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="profile">Profile</string>
+    <string name="at_screen_name">"@%1$s"</string>
+    <string name="num_following">"%1$d FOLLOWING</string>
+    <string name="num_followers">"%1$d FOLLOWERS</string>
 
 </resources>

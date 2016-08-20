@@ -6,11 +6,51 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:actionBarStyle">@style/TwitterActionBar</item>
+        <item name="actionBarStyle">@style/TwitterActionBar</item>
     </style>
+
+    <color name="twitter_blue">#57adee</color>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/TwitterActionBar</item>
+        <item name="actionBarStyle">@style/TwitterActionBar</item>
+    </style>
+
+    <style name="TwitterActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/twitter_blue</item>
+        <item name="background">@color/twitter_blue</item>
+    </style>
+
+    <style name="TwitterTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/twitter_blue</item>
+        <item name="tabTextAppearance">@style/TwitterTabTextStyle</item>
+        <item name="tabSelectedTextColor">@color/twitter_blue</item>
+    </style>
+
+    <style name="TwitterTabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/twitter_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TwitterText">
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="TwitterUserName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="TwitterUserScreenName">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
     </style>
 
 </resources>
